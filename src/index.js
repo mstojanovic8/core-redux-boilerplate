@@ -1,15 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { WithTranslations, getCurrentLocale } from '@fishingbooker/translations';
-import App from './App';
-import configureStore from '../../redux/src/redux/store/configureStore';
+import App from './containers/App';
+import configureStore from './redux/store/configureStore';
+
 import * as TRANSLATIONS from './translations';
 
 const userLocale = getCurrentLocale();
 
-window.ReduxRouterBoilerplate = {
+window.ReduxBoilerplate = {
   render: (element) => {
     const store = configureStore();
     render(
@@ -18,9 +18,7 @@ window.ReduxRouterBoilerplate = {
         domains={Object.values(TRANSLATIONS.DOMAINS)}
       >
         <Provider store={store}>
-          <Router>
-            <App />
-          </Router>
+          <App userId={1} />
         </Provider>
       </WithTranslations>,
       element

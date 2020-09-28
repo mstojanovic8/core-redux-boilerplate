@@ -1,5 +1,5 @@
 {
-  "name": "redux-router-boilerplate",
+  "name": "redux-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -39,7 +39,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
-    "react-router-dom": "^5.2.0",
     "react-styled-flexboxgrid": "^3.2.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",

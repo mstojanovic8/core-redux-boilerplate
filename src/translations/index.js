@@ -1,3 +1,1 @@
-export const DOMAINS = {
-
-};
+export const DOMAINS = {};
